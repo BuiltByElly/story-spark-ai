@@ -23,7 +23,24 @@ const login = z.object({
   }),
 });
 
+const forgotPassword = z.object({
+  body: z.object({
+    email: z.string({ required_error: "Email is required" }).email("Invalid email address"),
+  }),
+});
+
+const resetPassword = z.object({
+  body: z.object({
+    email: z.string({ required_error: "Email is required" }).email("Invalid email address"),
+    password: passwordSchema,
+    confirmPassword: z.string({ required_error: "Confirm password is required" }),
+    verificationToken: z.string({ required_error: "Verification token is required" }),
+  }),
+});
+
 export const UserValidator = {
   register,
   login,
+  forgotPassword,
+  resetPassword,
 };
