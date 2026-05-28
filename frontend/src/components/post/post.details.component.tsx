@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import {
   useGetPostByIdQuery,
   useGetPostByTagQuery,
 } from "../../redux/apis/post.api";
 import RelatedStoriesComponent from "./related.stories.view.component";
 import PostCommentComponent from "./post.comment.component";
-import { useNavigate } from "react-router-dom";
+
 import LoadingAnimation from "../loading/loading.component";
 import SSProfile from "../ui-component/ss-profile/ss-profile";
 import { formatDateShort } from "../../utils/time-formate";
