@@ -5,13 +5,13 @@ import CollabHome from "./components/collab/CollabHome";
 import CollabRoom from "./components/collab/CollabRoom";
 import StoriesComponent from "./components/stories/stories.component";
 
+
 import {
   createBrowserRouter,
   RouterProvider,
   Navigate,
   Outlet,
 } from "react-router-dom";
-
 import HeroSectionComponent from "./components/hero/hero_section.component";
 import HomeComponent from "./components/home/home.component";
 import LoginComponent from "./components/login/login.component";
@@ -56,7 +56,14 @@ import ReportBug from "./components/report-bug/ReportBug";
 import ForgotPasswordComponent from "./components/forgot-password/forgot-password.component";
 import AnalyticsPage from "./components/dashboard/analytics/analytics.page";
 import StoryWorkspace from "./components/story/StoryWorkspace";
-import Scrolltotopandscrolltobottom from "./components/Scrolltotopandscrolltobottom.tsx"
+
+
+// <<<<<<< HEAD
+// =======
+
+ import Scrolltotopandscrolltobottom from "./components/Scrolltotopandscrolltobottom.tsx"
+
+
 
 type ProtectedRouteProps = {
   allowedRoles: string[];
@@ -182,4 +189,13 @@ function App() {
   );
 }
 
+
+
 export default App;
+
+
+export default App;
+
+
+export default App;
+
